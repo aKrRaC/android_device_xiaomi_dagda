@@ -33,4 +33,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := Xiaomi/zeus_global/zeus:14/UKQ1.230917.001/V816.0.4.0.ULBMIXM:user/release-keys
 
+PRODUCT_SYSTEM_PROPERTIES += ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
