@@ -14,6 +14,10 @@ $(call inherit-product, device/xiaomi/dagda/device.mk)
 # Inherit from common Blaze configuration
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
+# Miui Camera for zeus
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/device.mk)
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
+
 # Product details
 PRODUCT_NAME := blaze_dagda
 PRODUCT_DEVICE := dagda
