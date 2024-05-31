@@ -10,6 +10,10 @@ $(call inherit-product, device/xiaomi/dagda/device.mk)
 # Inherit from common RisingOSS configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Miui Camera for zeus
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/device.mk)
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
+
 PRODUCT_NAME := lineage_dagda
 PRODUCT_DEVICE := dagda
 PRODUCT_MANUFACTURER := Xiaomi
