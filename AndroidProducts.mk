@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_dagda.mk
+    $(LOCAL_DIR)/awaken_dagda.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_dagda-user \
-    lineage_dagda-userdebug \
-    lineage_dagda-eng
+    awaken_dagda-user \
+    awaken_dagda-userdebug \
+    awaken_dagda-eng
