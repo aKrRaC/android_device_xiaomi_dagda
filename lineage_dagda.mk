@@ -13,6 +13,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Gapps
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 
+# Miui Camera for zeus
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/device.mk)
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
+
 PRODUCT_NAME := lineage_dagda
 PRODUCT_DEVICE := dagda
 PRODUCT_MANUFACTURER := Xiaomi
