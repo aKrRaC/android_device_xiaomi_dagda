@@ -14,6 +14,10 @@ $(call inherit-product, device/xiaomi/dagda/device.mk)
 # Inherit from common PixelStar configuration
 $(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
 
+# Miui Camera for zeus
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/device.mk)
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
+
 # Product details
 PRODUCT_NAME := pixelstar_dagda
 PRODUCT_DEVICE := dagda
