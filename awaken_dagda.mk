@@ -14,6 +14,10 @@ $(call inherit-product, device/xiaomi/dagda/device.mk)
 # Inherit from common AwakenOS configuration
 $(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
+# Miui Camera for zeus
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/device.mk)
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
+
 # Product details
 PRODUCT_NAME := awaken_dagda
 PRODUCT_DEVICE := dagda
