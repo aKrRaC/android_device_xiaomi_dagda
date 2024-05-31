@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_dagda.mk
+    $(LOCAL_DIR)/blaze_dagda.mk
+
+COMMON_LUNCH_CHOICES := \
+    blaze_dagda-user \
+    blaze_dagda-userdebug \
+    blaze_dagda-eng
