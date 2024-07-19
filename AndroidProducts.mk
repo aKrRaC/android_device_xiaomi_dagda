@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_dagda.mk
+    $(LOCAL_DIR)/pixelstar_dagda.mk
+
+COMMON_LUNCH_CHOICES := \
+    pixelstar_dagda-user \
+    pixelstar_dagda-userdebug \
+    pixelstar_dagda-eng
