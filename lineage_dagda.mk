@@ -1,15 +1,20 @@
 #
-# Copyright (C) 2022-2024 The LineageOS Project
+# Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit framework first
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Inherit from dagda device
 $(call inherit-product, device/xiaomi/dagda/device.mk)
 
-# Inherit from common lineage configuration
+# Inherit from common EverestOS configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Product details
 PRODUCT_NAME := lineage_dagda
 PRODUCT_DEVICE := dagda
 PRODUCT_MANUFACTURER := Xiaomi
@@ -27,3 +32,24 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := Xiaomi/zeus_global/zeus:14/UKQ1.230917.001/V816.0.4.0.ULBMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+#
+# EverestOS specific flags
+#
+# Build type
+EVEREST_BUILD_TYPE := UNOFFICIAL
+# Maintainer string
+EVEREST_MAINTAINER := aKrRaC
+# Boot Animation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+# Blur support
+TARGET_SUPPORTS_BLUR := true
+# UDFPS support
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+# GApps support
+WITH_GAPPS := true
+# Launcher
+TARGET_USES_BLUR_RECENT := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
