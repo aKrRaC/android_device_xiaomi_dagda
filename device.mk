@@ -30,3 +30,6 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Sign build
+-include vendor/lineage-priv/keys/keys.mk
