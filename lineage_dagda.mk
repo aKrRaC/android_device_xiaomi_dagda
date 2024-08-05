@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/dagda/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Gapps
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+
 PRODUCT_NAME := lineage_dagda
 PRODUCT_DEVICE := dagda
 PRODUCT_MANUFACTURER := Xiaomi
