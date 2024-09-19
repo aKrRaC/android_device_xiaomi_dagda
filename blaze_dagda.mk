@@ -61,3 +61,5 @@ TARGET_UDFPS_ANIMATIONS := true
 # GApps support
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
+# Pixel Launcher
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
