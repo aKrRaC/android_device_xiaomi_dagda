@@ -18,6 +18,9 @@ $(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/device.mk)
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
 
+# Vendor Dolby
+$(call inherit-product-if-exists, vendor/xiaomi/dolby/dolby.mk)
+
 # Product details
 PRODUCT_NAME := pixelstar_dagda
 PRODUCT_DEVICE := dagda
